@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Thomas VANDECSATEELE</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="page">
+    <header>
+
+        <div class="header"><a href="hobby.html">Hobby.t</a></div>
+        <div class="header"><a href="contact.html">Contact</a></div>
+        <div class="header"><a href="index.html">Home</a></div>
+
+    </header>
+    <aside class="bandeau">
+        <div>
+            <h2 class="dessus">Thomas VANDECASTEELE </h2>
+            <div class="dessous" id="contact">
+                <h4>Contact :</h4>
+                <p>06 72 91 13 03</p>
+                <p>vandecasteele.thomas667@gmail.com</p>
+            </div>
+            <img id="photo" src="media/Capture.PNG" alt="Ma grosse tete">
+        </div>
+        <div class="bas_aside">
+            <p>adresse</p>
+            <p>code postal</p>
+        </div>
+        <div class="bas_aside">
+            <p>permis B</p>
+            <p>velo</p>
+        </div>
+    </aside>
+    <section class="main">
+        <h2>Contactez-nous</h2>
+        <p class="monterenlair">Un problème, une question, envie de nous envoyer un message de haine ? N’hésitez pas à utiliser ce formulaire
+            pour prendre contact avec nous ! #onvavousmonterenlair</p>
+        <form action="https://httpbin.org/post" method="post">
+            <div>
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Jordan" required>
+            </div>
+            <div>
+                <label for="email">Votre e-mail</label>
+                <input type="email" id="email" name="email" placeholder="IbraTV@bagarre.com" required>
+            </div>
+            <div>
+                <label for="sujet">Quel est le sujet de votre message ?</label>
+                <select name="sujet" id="sujet" required>
+                    <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+                    <option value="1 contre 1">1 contre 1</option>
+                    <option value="2 contre 2">2 contre 2</option>
+                    <option value="10 contre 10">10 contre 10</option>
+                    <option value="autre">Autre...</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Avec ou sans couteaux :</legend>
+                <input type="radio" id="avec" name="shlass" value="avec" checked>
+                <label for="avec">Avec</label>
+                <input type="radio" id="sans" name="shlass" value="sans">
+                <label for="sans">Sans</label>
+            </fieldset>
+            <div>
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" placeholder="Bonjour, je veux me battre...." required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer mon message</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
